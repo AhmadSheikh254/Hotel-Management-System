@@ -1,0 +1,17 @@
+:root{--gold:#cba135;--navy:#0b2545}
+.public-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;background:linear-gradient(90deg,#fff, #f7f7f7)}
+.public-header .brand{font-weight:700;font-size:1.2rem;color:var(--navy)}
+.public-nav a{margin:0 0.6rem;color:var(--navy);text-decoration:none}
+.btn-primary{background:var(--gold);padding:0.6rem 1rem;border-radius:6px;color:#fff;text-decoration:none}
+.btn-outline{border:1px solid var(--gold);padding:0.5rem 0.9rem;border-radius:6px;color:var(--gold)}
+.hero{display:flex;align-items:stretch;min-height:60vh}
+.hero-inner{flex:1;padding:4rem}
+.hero-image{flex:1;background-image:url('https://source.unsplash.com/1200x900/?luxury,hotel');background-size:cover;background-position:center}
+.rooms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.room-card.public{border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.room-image{height:180px;background-size:cover;background-position:center}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.gallery-grid img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+.booking-form label{display:block;margin:0.5rem 0}
+.contact-form label{display:block;margin:0.5rem 0}
+.public-footer{text-align:center;padding:1rem;background:#f7f7f7}

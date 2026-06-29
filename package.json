@@ -1,0 +1,48 @@
+{
+  "name": "hotel-management-system",
+  "version": "1.0.0",
+  "description": "Hotel Management System flat monorepo for Vercel deployment",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node api/index.js",
+    "seed": "node scripts/seed.js",
+    "seed:undo": "node scripts/seed.js -d",
+    "test": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.0",
+    "axios": "^1.17.0",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "framer-motion": "^12.40.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^1.17.0",
+    "mongoose": "^8.11.0",
+    "morgan": "^1.10.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.6.0",
+    "react-is": "^19.2.7",
+    "react-router-dom": "^7.17.0",
+    "recharts": "^3.8.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@vitejs/plugin-react": "^6.0.2",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.7.2",
+    "vite": "^8.0.16",
+    "vitest": "^2.1.8"
+  }
+}
