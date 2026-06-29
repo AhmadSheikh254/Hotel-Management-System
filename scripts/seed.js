@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bcrypt = require('bcryptjs');
-const User = require('../api/models/User');
-const Room = require('../api/models/Room');
-const Guest = require('../api/models/Guest');
-const Feedback = require('../api/models/Feedback');
-const connectDB = require('../api/config/db');
+const User = require('../api/_lib/models/User');
+const Room = require('../api/_lib/models/Room');
+const Guest = require('../api/_lib/models/Guest');
+const Feedback = require('../api/_lib/models/Feedback');
+const connectDB = require('../api/_lib/config/db');
 
 dotenv.config();
 connectDB();

@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
+const connectDB = require('./_lib/config/db');
 
 // Load environment variables
 dotenv.config();
@@ -23,26 +23,26 @@ app.get('/', (req, res) => {
 });
 
 // Auth Routes
-app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/auth', require('./_lib/routes/authRoutes'));
 
 // Guest Routes
-app.use('/api/guests', require('./routes/guestRoutes'));
+app.use('/api/guests', require('./_lib/routes/guestRoutes'));
 
 // Room Routes
-app.use('/api/rooms', require('./routes/roomRoutes'));
+app.use('/api/rooms', require('./_lib/routes/roomRoutes'));
 
 // Reservation Routes
-app.use('/api/reservations', require('./routes/reservationRoutes'));
+app.use('/api/reservations', require('./_lib/routes/reservationRoutes'));
 
 // Guest portal auth
-app.use('/api/guest-auth', require('./routes/guestAuthRoutes'));
+app.use('/api/guest-auth', require('./_lib/routes/guestAuthRoutes'));
 
 // Feedback & service requests
-app.use('/api/feedback', require('./routes/feedbackRoutes'));
-app.use('/api/service-requests', require('./routes/serviceRequestRoutes'));
+app.use('/api/feedback', require('./_lib/routes/feedbackRoutes'));
+app.use('/api/service-requests', require('./_lib/routes/serviceRequestRoutes'));
 
 // Payments
-app.use('/api/payments', require('./routes/paymentRoutes'));
+app.use('/api/payments', require('./_lib/routes/paymentRoutes'));
 
 const PORT = process.env.PORT || 5000;
 
